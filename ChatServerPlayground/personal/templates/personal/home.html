@@ -1,0 +1,36 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block content %}
+  <style>
+    .my-grid {
+      border: 1px solid blue;
+    }
+
+    .my-grid-item {
+      border: 1px solid black;
+    }
+  </style>
+
+  <div class="container">
+    <div class="my-grid d-flex flex-row">
+      <p class="m-auto my-grid-item">Item</p>
+      <p class="m-auto my-grid-item">Item</p>
+      <p class="m-auto my-grid-item">Item</p>
+      <p class="m-auto my-grid-item">Item</p>
+      <p class="m-auto my-grid-item">Item</p>
+      <p class="m-auto my-grid-item">
+        Item
+      </p>
+    </div>
+
+    <div class="my-grid d-flex flex-column mt-4">
+      <p class="m-auto my-grid-item p-2">Item</p>
+      <p class="m-auto my-grid-item p-2">Item</p>
+      <p class="m-auto my-grid-item p-2">Item</p>
+      <p class="m-auto my-grid-item p-2">Item</p>
+      <p class="m-auto my-grid-item p-2">Item</p>
+      <p class="m-auto my-grid-item p-2">Item</p> 
+    </div>
+  </div>
+{% endblock content %}
